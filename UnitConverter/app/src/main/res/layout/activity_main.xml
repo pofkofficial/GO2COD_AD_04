@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Category Spinner -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:text="Select unit"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <!-- Input Unit and Output Unit Spinners -->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert from:"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/inputUnitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:textSize="16sp"/>
+
+    <Spinner
+        android:id="@+id/outputUnitSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp" />
+
+
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter value to convert"
+        android:inputType="numberDecimal" />
+
+
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:visibility="visible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/historyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="#D5D6D6" />
+
+</LinearLayout>
